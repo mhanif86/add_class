@@ -3,36 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>H A N I F</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-    <img src="profile.jpg" alt="Profile Image" width="100">
-    <h1> Hallo Word </h1>
-    <h1> Perkenalkan nama saya Hanif</h1>
-    <p> Ini portofolio saya</p>
-    </header>
-    <nav aria-label="Sosial Media Links">
-        <ul>
-            <li><a href="https://github.com/mhanif86" aria-label="GitHub">GitHub</a></li>
-            <li><a href="https://wa.me/6287832637740" aria-label="WhatsApp">WhatsApp</a></li>
-            <li><a href="#contact" aria-label="Contact">Contact</a></li>
-        </ul>
-        </nav>
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Ini adalah bagian tentang saya.</p>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>Ini adalah bagian proyek saya.</p>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Ini adalah bagian kontak saya.</p>
-            </section>
+<body class="min-h-screen bg-slate-100 text-slate-700 dark:bg-slate-950 dark:text-slate-100">
+    <div class="mx-auto max-w-md px-4 py-10 md:max-w-xl md:py-16 lg:grid lg:max-w-5xl lg:grid-cols-2 lg:items-start lg:gap-16">
+        <div>
+            <header class="flex flex-col items-center text-center">
+                <img src="avatar.svg" alt="foto profile saya" class="h-24 w-24 rounded-full shadow ring-4 ring-white md:h-28 md:w-28 dark:ring-slate-800">
+                <h1 class="mt-4 text-2xl font-bold md:text-3xl">Mohammad Hanif</h1>
+                <p class="mt-1 text-slate-500 text-sm dark:text-slate-400">Mas-mas biasa</p>
+            </header>
 
-    
+            <nav aria-label="Media Sosial">
+                <ul class="flex justify-center gap-3 flex-row">
+                    <li><a href="https://github.com/mhanif86" aria-label="Github"
+                        class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl shadow-sm ring-1 ring-slate-200 hover:bg-amber-300 hover:w-12 hover:h-12 dark:bg-slate-900 dark:ring-slate-800"
+                        >💪</a></li>
+                    <li><a href="https://linkedin.com/in/mhanif86" aria-label="Linkedin"
+                        class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl shadow-sm ring-1 ring-slate-200 hover:bg-amber-300 hover:w-12 hover:h-12 dark:bg-slate-900 dark:ring-slate-800"
+                        ">🫂</a></li>
+                    <li><a href="https://mhanif86.github.io/blog" aria-label="Blog"
+                        class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl shadow-sm ring-1 ring-slate-200 hover:bg-amber-300 hover:w-12 hover:h-12 dark:bg-slate-900 dark:ring-slate-800"
+                        >📰</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <h2 class="mt-8 text-sm font-semibold uppercase tracking-wide text-slate-500 lg:mt-0 dark:text-slate-400">Link Saya</h2>
+            <ul class="mt-3 space-y-3">
+                <li>
+                    <a href="https://example.com/portfolio"
+                        class="flex items-center justify-center gap-3 rounded-xl bg-white px-5 py-4 font-medium shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-slate-900 dark:ring-slate-800 dark:hover:bg-slate-100 dark:hover:text-slate-900 dark:focus-visible:outline-indigo-400">
+                        Portofolio
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/mhanif86/mypage"
+                        class="flex items-center justify-center gap-3 rounded-xl bg-white px-5 py-4 font-medium shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-slate-900 dark:ring-slate-800 dark:hover:bg-slate-100 dark:hover:text-slate-900 dark:focus-visible:outline-indigo-400 duration-200 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                        Link Page Ini
+                    </a>
+                </li>
+                <li>
+                    <a href="https://example.com/catatan"
+                        class="flex items-center justify-center gap-3 rounded-xl bg-white px-5 py-4 font-medium shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-slate-900 dark:ring-slate-800 dark:hover:bg-slate-100 dark:hover:text-slate-900 dark:focus-visible:outline-indigo-400 duration-200 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                        Catatan Kursus
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:halo@example.com"
+                        class="flex items-center justify-center gap-3 rounded-xl bg-white px-5 py-4 font-medium shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-slate-900 dark:ring-slate-800 dark:hover:bg-slate-100 dark:hover:text-slate-900 dark:focus-visible:outline-indigo-400 duration-200 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                        Email
+                    </a>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="mt-10 text-center text-xs text-slate-400 lg:col-span-2 dark:text-slate-500">
+            <p>&copy; 2026 Mohammad Hanif</p>
+        </footer>
+    </div>
 </body>
 </html>
